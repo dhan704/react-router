@@ -1,0 +1,13 @@
+.header {
+  background: blue;
+  padding-bottom: 3px;
+}
+
+.header span {
+  padding: 10px;
+  margin: 10px;
+}
+.header .active {
+  background: rgb(125, 125, 222);
+  border-bottom: 3px solid white;
+}

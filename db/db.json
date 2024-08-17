@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Abert",
+      "address": "7199 Sask west",
+      "class": 7
+    },
+    {
+      "id": 2,
+      "name": "John",
+      "address": "8798 Sask east",
+      "class": 7
+    },
+    {
+      "id": 3,
+      "name": "Roy",
+      "address": "1002 Sask west",
+      "class": 8
+    },
+    {
+      "id": 4,
+      "name": "Kiran",
+      "address": "8888 Sask west",
+      "class": 5
+    },
+    {
+      "id": 5,
+      "name": "Anu",
+      "address": "999 Sask east",
+      "class": 5
+    },
+    {
+      "id": 6,
+      "name": "Sunu",
+      "address": "2322 Sask west",
+      "class": 4
+    }
+  ]
+}

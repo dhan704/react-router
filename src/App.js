@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Settings from "./Pages/Settings";
+import Usage from "./Pages/Usage";
+import Users from "./Pages/Users";
+import Home from "./Pages/Home";
+import Header from "./components/Header";
+import Details from "./Pages/Details";
+import NotFound from "./Pages/NotFound";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        {/* <a href="settings">Settings</a> 
+        Disadvantages:- if we use <a></a> tag, html page request happens in network & whole page is is getting refreshed.
+        That is not needed, since we have all the code when it is initially loaded.
+        we need to change the URL only, we dont need to send request to server & refresh the page. 
+        Just need to render react.
+        For that we can use history APIs in JS.
+        React router have creataed a component using that, which is called <Link>.
+        Thus this kind of refresh wont happened. 
+        Thus better performance
+        */}
+        <Header />
+      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="usage" element={<Usage />} />
+        <Route path="users" element={<Users />} />
+        <Route path="settings" element={<Settings />} />
+        <Route path="details/:userId" element={<Details />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
