@@ -2,11 +2,14 @@ import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Settings from "./Pages/Settings";
 import Usage from "./Pages/Usage";
-import Users from "./Pages/Users";
+// import Users from "./Pages/Users";
 import Home from "./Pages/Home";
 import Header from "./components/Header";
 import Details from "./Pages/Details";
 import NotFound from "./Pages/NotFound";
+import React, { Suspense } from "react";
+
+const MyUsers = React.lazy(() => import("./Pages/Users"));
 
 function App() {
   return (
@@ -24,14 +27,16 @@ function App() {
         */}
         <Header />
       </div>
+      <Suspense className="page" fallback={<div>Loading....</div>}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="usage" element={<Usage />} />
-        <Route path="users" element={<Users />} />
+        <Route path="users" element={<MyUsers />} />
         <Route path="settings" element={<Settings />} />
         <Route path="details/:userId" element={<Details />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      </Suspense>
     </BrowserRouter>
   );
 }
