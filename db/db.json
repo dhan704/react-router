@@ -4,37 +4,97 @@
       "id": 1,
       "name": "Abert",
       "address": "7199 Sask west",
-      "class": 7
+      "class": 7,
+      "marks":{
+        "physics":[45,47,49,41,43],
+        "chemistry":[71,75,78,75,76],
+        "maths":[81,82,86,84,85]
+      },
+      "sports":{
+        "highjump":1,
+        "longjump":-1
+      },
+      "remarks":["Notes 1 not submitted"]
     },
     {
       "id": 2,
       "name": "John",
       "address": "8798 Sask east",
-      "class": 7
+      "class": 7,
+      "marks":{
+        "physics":[45,47,49,41,43],
+        "chemistry":[71,75,78,75,76],
+        "maths":[81,82,86,84,85]
+      },
+      "sports":{
+        "highjump":1,
+        "longjump":-1
+      },
+      "remarks":["Notes 2 not submitted"]
     },
     {
       "id": 3,
       "name": "Roy",
       "address": "1002 Sask west",
-      "class": 8
+      "class": 8,
+      "marks":{
+        "physics":[45,47,49,41,43],
+        "chemistry":[71,75,78,75,76],
+        "maths":[81,82,86,84,85]
+      },
+      "sports":{
+        "highjump":1,
+        "longjump":-1
+      },
+      "remarks":["Notes 3 not submitted"]
     },
     {
       "id": 4,
       "name": "Kiran",
       "address": "8888 Sask west",
-      "class": 5
+      "class": 5,
+      "marks":{
+        "physics":[45,47,49,41,43],
+        "chemistry":[71,75,78,75,76],
+        "maths":[81,82,86,84,85]
+      },
+      "sports":{
+        "highjump":1,
+        "longjump":-1
+      },
+      "remarks":["Notes 4 not submitted"]
     },
     {
       "id": 5,
       "name": "Anu",
       "address": "999 Sask east",
-      "class": 5
+      "class": 5,
+      "marks":{
+        "physics":[45,47,49,41,43],
+        "chemistry":[71,75,78,75,76],
+        "maths":[81,82,86,84,85]
+      },
+      "sports":{
+        "highjump":1,
+        "longjump":-1
+      },
+      "remarks":["Notes 5 not submitted"]
     },
     {
       "id": 6,
       "name": "Sunu",
       "address": "2322 Sask west",
-      "class": 4
+      "class": 4,
+      "marks":{
+        "physics":[45,47,49,41,43],
+        "chemistry":[71,75,78,75,76],
+        "maths":[81,82,86,84,85]
+      },
+      "sports":{
+        "highjump":1,
+        "longjump":-1
+      },
+      "remarks":["Notes 6 not submitted"]
     }
   ]
 }

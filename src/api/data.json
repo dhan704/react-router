@@ -1,0 +1,11 @@
+{
+  "anu": {
+    "role": ["user"]
+  },
+  "amal": {
+    "role": ["user"]
+  },
+  "kiran": {
+    "role": ["user", "admin"]
+  }
+}

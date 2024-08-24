@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { useParams, useNavigate, useLocation } from "react-router-dom";
+import { useParams, useNavigate, useLocation, NavLink, Outlet } from "react-router-dom";
 function Details() {
   const obj = useParams();
   const location = useLocation();
@@ -25,6 +25,15 @@ function Details() {
   return (
     <div className="detailsDiv">
       <div className="details">{`${user.id} ${user.name},${user.address}`}</div>
+
+      <div className="detailNavLink">
+        <NavLink to=""><span>Marks</span></NavLink>
+        <NavLink to="sports"><span>Sports</span></NavLink>
+        <NavLink to="remarks"><span>Remarks</span></NavLink>
+      </div>
+      <div>
+        <Outlet context={user}/>
+      </div>
       <button
         className="backBtn"
         onClick={() => {
