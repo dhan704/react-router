@@ -1,13 +1,18 @@
 .header {
-  background: blue;
-  padding-bottom: 3px;
+  background: #0085ff;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .header span {
   padding: 10px;
   margin: 10px;
+  color:white
 }
+
 .header .active {
   background: rgb(125, 125, 222);
   border-bottom: 3px solid white;
+  padding-bottom: 30px;
 }
